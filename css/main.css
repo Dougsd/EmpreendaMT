@@ -1,9 +1,30 @@
-video{
-    width: 50%;
-    height: 50%;
-    float: left;
+
+body{
+    background-color:#fff;
+}
+footer{
+    background-color: #0070c0;
+    color: #fff;
+    text-justify: auto;
+    text-align: center;
     
 }
-section{
-    background-color: #0070c0;
+.Footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+h2{
+    text-align: center;
+    color:  #92d050;
+}
+
+.Geral{
+    position: relative;
+    min-height: 100%;
+    
+}
+*  {
+    margin:0;
+    padding:0;
 }

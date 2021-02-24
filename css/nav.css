@@ -1,7 +1,30 @@
+#logo1{
+  height: 160px;
+  width: 200px;
+  float: left;
+  margin: 0;
+  
+}
+#logo2{
+  margin: 30px;
+  height: 100px;
+  width: 200px;
+  float: right;
+}
+#titulo{
+  text-justify: auto;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+
+
+
 ul {
+    width: 100%;
     list-style-type: none;
     padding:0%;
-    margin: -0.6%;
     overflow: hidden;
     background-color: #0070c0;
   }
@@ -21,3 +44,4 @@ ul {
   li a:hover {
     background-color: #92d050;
 }
+
