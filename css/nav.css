@@ -21,7 +21,7 @@
 
 
 
-ul {
+.Geral ul {
     width: 100%;
     list-style-type: none;
     padding:0%;
@@ -29,11 +29,11 @@ ul {
     background-color: #0070c0;
   }
   
-  li {
+ .Geral li {
     float: left;
   }
   
-  li a {
+ .Geral li a {
     display: block;
     color: white;
     text-align: center;
@@ -41,7 +41,7 @@ ul {
     text-decoration: none; 
   }
   
-  li a:hover {
+  .Geral li a:hover {
     background-color: #92d050;
 }
 

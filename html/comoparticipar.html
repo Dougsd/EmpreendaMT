@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/body.css">
     <link rel="stylesheet" href= "../css/main.css">
     <link rel="stylesheet" href="../css/comoParticipar.css">
+    <script src="../javaScript/galeri.js"></script>
 </head>
 
 <body>
@@ -31,20 +32,29 @@
                 <li><a href="./contato.html">Contato</a></li>
             </ul>
             </header>
-
-            <h2>Segue os passos</h2>
-
+            
+        </div>
+        
+     <!------------------------------------------------------------------------------------->
+        <div class="top-galeri">
 
         </div>
-     <!------------------------------------------------------------------------------------->
+
+
      <!--Conteiner-Galeria-->
         <div class="conteiner">
-            <img src="../img/passo1.png" alt="Passo1" id="idImg">
-            
-            <script src="../javaScript/galeri.js"></script>
-            <button onclick="nextFrame()">Next</button>
-            
-        </div>
+            <br>
+            <div class="box-esq">
+                <img src="../img/btn-back.png" alt="Btn-back" id="btn-back" onclick="backFrame()">
+            </div>
+            <div class="box-meio">
+                <img src="../img/passo1.png" alt="Passos" id="idImg">  
+            </div>
+            <div class="box-dir">
+                <img src="../img/btn-next.png" alt="Btn-next" id="btn-next" onclick="nextFrame()">
+            </div>
+        </div> 
+        
      <!-------------------------------------------------------------------------------------->
         <br>
         <div class="Footer">
