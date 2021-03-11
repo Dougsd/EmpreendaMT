@@ -1,21 +1,23 @@
 #logo1{
-  height: 160px;
+  height: auto;
   width: 200px;
   float: left;
-  margin: 0;
+  padding-top:10px;
+  padding-left: 10px;
   
 }
 #logo2{
-  margin: 30px;
-  height: 100px;
+  padding-top:50px;
+  padding-right: 50px;
+  height: auto;
   width: 200px;
   float: right;
 }
 #titulo{
-  text-justify: auto;
+  text-align: justify;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 25px;
+  font-size: 2vw;
 }
 
 

@@ -1,3 +1,35 @@
+.top-galeri{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+#titulo-galeri{
+    flex: 50%;
+    height: auto;
+    text-align:center;
+}
+#titulo-galeri h2{
+    margin-bottom: 1%;
+    position: absolute;
+    right: 55%;
+    bottom: 0;
+    font-size:2vw; /*Tamanho de fonte ajustavel de acordo com o tamanho do box*/   
+}
+#btn-isc{
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    height: auto;
+}
+#btn-isc:hover{
+    width: 21%;
+}
+#btn-iniciar{
+    flex: 50%;
+    height: auto;
+}
 .conteiner {
    display: flex;
    width: 100%;
@@ -50,13 +82,6 @@
     height: auto;
  }
 
-.top-galeri{
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: 100px;
-    background-color: lawngreen;
-}
 
 
 
