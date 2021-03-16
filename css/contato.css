@@ -1,0 +1,28 @@
+
+.box-1{
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+}
+.box-2{
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+}
+.box-3{
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+}
+.box-1 img{
+    width: 5%;
+    height: auto;
+}
+.box-2 img{
+    width: 5%;
+    height: auto;
+}
+.box-3 img{
+    width: 5%;
+    height: auto;
+}
