@@ -9,7 +9,11 @@ footer{
     text-justify: auto;
     text-align: center;
     
-   
+}
+
+.Footer footer address{
+    font-size: 1.3vw;
+    font-size: 1.250vmax;
 }
 .Footer{
     width: 100%;
