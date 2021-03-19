@@ -34,28 +34,3 @@ h2{
     margin:0;
     padding:0;
 }
-#flex-box{
-   display: flex;
-   flex-wrap: wrap;
-}
-.banner{
-    text-align: center;
-    flex: 21%;
-    max-width: 21%;
-    min-height: 21%;
-    margin: 1%;
-    padding: 1%;
-    background-color: #67ac1e;
-    border-radius: 20px;
-    
-}
-.banner p{
-    font-size: 10px;
-    bottom: 0;
-   
-}
-.banner img{
-    margin: 5px;
-    width: 80%;
-    height: 80%;
-}

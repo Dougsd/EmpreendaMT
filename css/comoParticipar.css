@@ -23,6 +23,9 @@
     bottom: 0;
     width: 20%;
     height: auto;
+    border-radius: 25%;
+    border:solid 1px;
+    border-color: #4b5247;
 }
 #btn-isc:hover{
     width: 21%;
@@ -83,8 +86,8 @@
 }
  #idImg{
     border: solid;
-    border-radius: 1%;
-    border-color: #333333;
+    border-radius: 3%;
+    border-color: #0070c0;
     width: 98%;
     margin:1%;
     height: auto;
