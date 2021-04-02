@@ -1,3 +1,4 @@
+/*Função para avançar para o pŕoximo frame*/
 function nextFrame(){
     let doc = document.getElementById("idImg");
     let link = doc.getAttribute("src");

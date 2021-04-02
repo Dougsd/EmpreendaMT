@@ -1,36 +1,102 @@
+/*Geral*/
+*  {
+    margin:0;                     /*Margens em torno da divisão*/
+    padding:0;                    /*Distancia entre as bordas e o conteúdo*/
+}
 
 body{
-    background-color:#fff;
-    max-height: 100%;
+    max-height: 100%;             /*Altura máxima*/
 }
+
+/*Rodapé*/
 footer{
-    background-color: #0070c0;
-    color: #fff;
-    text-justify: auto;
-    text-align: center;
+    background-color: #0070c0;  /*Cor de fundo*/
+    color: #fff;                /*Cor das caracteres*/
+    text-justify: auto;           /*Texto justificado*/
+    text-align: center;           /*Alinhamento do campo de texto*/
+    width: 100%;                  /*Largura da divisão*/
+    bottom: 0;                    /*Posiciona essa divisão na ultima linha da divisão que pertence*/
     
 }
 
-.Footer footer address{
-    font-size: 1.3vw;
-    font-size: 1.250vmax;
+footer address{
+    font-size: 1.3vw;             /*Tamanho da fonte*/
+    font-size: 1.250vmax;         /*Recolhimento máximo da fonte*/
 }
-.Footer{
-    width: 100%;
-    bottom: 0;
-    
-}
+
 h2{
-    text-align: center;
-    color:  #92d050;
+    text-align: center;           /*Alinhamento do texto*/
+    color:  #92d050;            /*Cor das caracteres*/
 }
 
 .Geral{
-    position: relative;
-    min-height: 100%;
+    position: relative;           /*Permite flutuar ítens dessa divisão*/
+    min-height: 100%;             /*Mínima altura da divisão*/
     
 }
-*  {
-    margin:0;
-    padding:0;
-}
+
+/*Logos*/
+ .conteiner-boxs{
+    width: 100%;                  /*Largura da divisão*/
+    height: auto;                 /*Altura da divisão*/
+    display: flex;                /*Define que a divisão será flexível*/
+    flex-wrap: nowrap;            /*Bloqueia ítens na mesma linha*/
+    
+  }
+  .box-logo{
+  
+    width: 25%;                   /*Largura da divisão*/
+    height: 100%;                 /*Altura da divisão*/
+    text-align: center;           /*Centraliza o conteúdo da divisão*/
+  }
+  .box-logo img{
+    width: 40%;                   /*Largura da divisão*/
+    padding: 1%;                  /*Distancia entre bordas e conteúdo*/
+    height: auto;                 /*Altura da divisão*/
+  }
+  .box-titulo{
+    padding-top: 2%;              /*Distancia entre conteúdo e borda do topo da divisão*/
+    text-align: center;           /*Centraliza conteúdo da divisão*/
+    font-size: 2vw;               /*Tamanho da fonte*/
+    width: 50%;                   /*Largura da divisão*/
+    
+  }
+  .box-logo2{
+    padding-top: 3%;              /*Distancia do conteúdo com a borda do topo*/
+    text-align: center;           /*Centraliza o conteúdo*/
+    width: 25%;                   /*Largura da divisão*/
+   
+  
+  }
+  .box-logo2 img{
+    width: 65%;                   /*Largura da divisão*/
+    height: auto;                 /*Altura da divisão*/
+  }
+  
+  /*Navegação*/
+  .Geral ul {
+    width: 100vw;                 /*Largura da divisão*/
+    list-style-type: none;        /*Remove estilo padrão da lista*/
+    padding:0%;                   /*Distancia do conteúdo entre a borda*/
+    overflow: hidden;             /*O conteúdo é cortado e nenhuma barra de rolagem é exibida.*/
+    background-color: #0070c0;  /*Cor de fundo*/
+    }
+    
+   .Geral li {
+      float: left;                /*Permite flutuar o ítem em um canto da interface*/
+    }
+    
+   .Geral li a {
+    display: block;               /*Reserva a linha exclusivamente idependentemente de sua largura */
+    color: white;               /*Cor das caracteres*/
+    text-align: center;           /*Centraliza o conteúdo*/
+    padding: 10px 16px;           /*Distancia entre o conteúdo e as bordas esquerda e direita*/
+    text-decoration: none;        /*Remove formatação padrão do texto*/
+    font-size: 1.3vw;             /*Tamanho da fonte do texto*/
+    }
+    
+    .Geral li a:hover {
+    background-color: #92d050;  /*Cor de fundo*/
+  }
+  
+  

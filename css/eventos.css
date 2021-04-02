@@ -1,37 +1,36 @@
 #flex-box{
-    display: flex;
-    flex-wrap:wrap;
-    background-color:#fff;
+    display: flex;                  /*Torna a divisão flexível*/
+    flex-wrap:wrap;                 /*Organização de intens em ordem crescente*/
     
  }
  .banner{
-     text-align: center;
-     width: 250px;
-     height: auto;
-     margin: 2%;
-     padding: 1%;
-     background-color: #92d050;
-     border-radius: 20px;
-     border:solid 1px;
-     border-color: #4b5247;
+     text-align: center;            /*Centraliza o conteúdo*/
+     width: 250px;                  /*Largura da divisão*/
+     height: auto;                  /*Altura da divisão*/
+     margin: 2%;                    /*Margens em torno da divisão*/
+     padding: 1%;                   /*Distancia entre o conteúdo e a borda*/
+     background-color: #92d050;   /*Cor de fundo*/
+     border-radius: 20px;           /*Arredondamento de bordas*/
+     border:solid 1px;              /*Tipo de borda*/
+     border-color: #4b5247;       /*Cor da borda*/
      
  }
 
  .banner p{
-     font-size: 1.6vmax;
-     bottom: 0;
+     font-size: 1.6vmax;            /*Tamanho da fonte*/
+     bottom: 0;                     /*Fixa o conteúdo na ultima linha da divisão */
      
  }
  .banner p a{
-     font-size: 1.6vmax;
+     font-size: 1.6vmax;            /*Tamanho da fonte*/
  }
  .banner img{
-     margin: 5px;
-     width: 80%;
-     height: auto;
+     margin: 5px;                   /*Margens em torno da divisão*/
+     width: 80%;                    /*Largura da divisão*/
+     height: auto;                  /*Altura da divisão*/
  }
  .app-text a{
-    text-decoration: none;
-    font-size: 1.2vmax;
+    text-decoration: none;          /*Remove formatação padrão*/
+    font-size: 1.2vmax;             /*Tamanho da fonte*/
  }
  
