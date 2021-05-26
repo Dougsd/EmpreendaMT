@@ -1,36 +1,37 @@
 #flex-box{
-    display: flex;                  /*Torna a divisão flexível*/
-    flex-wrap:wrap;                 /*Organização de intens em ordem crescente*/
+    display: flex;
+    flex-wrap:wrap;
+    background-color:#fff;
     
  }
  .banner{
-     text-align: center;            /*Centraliza o conteúdo*/
-     width: 250px;                  /*Largura da divisão*/
-     height: auto;                  /*Altura da divisão*/
-     margin: 2%;                    /*Margens em torno da divisão*/
-     padding: 1%;                   /*Distancia entre o conteúdo e a borda*/
-     background-color: #92d050;   /*Cor de fundo*/
-     border-radius: 20px;           /*Arredondamento de bordas*/
-     border:solid 1px;              /*Tipo de borda*/
-     border-color: #4b5247;       /*Cor da borda*/
+     text-align: center;
+     width: 250px;
+     height: auto;
+     margin: 2%;
+     padding: 1%;
+     background-color: #92d050;
+     border-radius: 20px;
+     border:solid 1px;
+     border-color: #4b5247;
      
  }
 
  .banner p{
-     font-size: 1.6vmax;            /*Tamanho da fonte*/
-     bottom: 0;                     /*Fixa o conteúdo na ultima linha da divisão */
+     font-size: 1.6vmax;
+     bottom: 0;
      
  }
  .banner p a{
-     font-size: 1.6vmax;            /*Tamanho da fonte*/
+     font-size: 1.6vmax;
  }
  .banner img{
-     margin: 5px;                   /*Margens em torno da divisão*/
-     width: 80%;                    /*Largura da divisão*/
-     height: auto;                  /*Altura da divisão*/
+     margin: 5px;
+     width: 80%;
+     height: auto;
  }
  .app-text a{
-    text-decoration: none;          /*Remove formatação padrão*/
-    font-size: 1.2vmax;             /*Tamanho da fonte*/
+    text-decoration: none;
+    font-size: 1.2vmax;
  }
  
