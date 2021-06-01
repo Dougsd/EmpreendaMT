@@ -6,25 +6,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
         <link rel="stylesheet" href="../css/login.css">
+        
+        <script  src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script  src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+        <script  src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+        <script  src="https://www.gstatic.com/firebasejs/8.6.3/firebase-storage.js"></script>
+
     </head>
 
     <body>
-        <form class="form" action="#">
+        <script>
+              var firebaseConfig = {
+                        apiKey: "AIzaSyDIOYvBWIKB554i91NzZYeMm8IJxYiYJvc",
+                        authDomain: "empreendamt-ba0dc.firebaseapp.com",
+                        projectId: "empreendamt-ba0dc",
+                        storageBucket: "empreendamt-ba0dc.appspot.com",
+                        messagingSenderId: "220016695651",
+                        appId: "1:220016695651:web:f50968d4a5b256cefc5b56",
+                        measurementId: "G-Z5VDJM5T9B"
+                };
+                
+                if (firebase.initializeApp(firebaseConfig)) {
+                    console.log("OK!")
+                } else {
+                    console.log("BAD!")
+                }
+            //Funcionou ate aki
+
+                function acess (){
+                    var email = document.getElementById("mail");
+                    var senha = document.getElementById("pass");
+                    if (email.value !="" && senha.value !="" ){
+                        firebase.auth().signInWithEmailAndPassword(email.value,senha.value);
+                        firebase.auth().onAuthStateChanged(function(user){
+                            if (user) {
+                                console.log("Logado com sucesso!")
+                                window.location.href = "http://localhost:8080/application/index.html";
+                            }else{
+                                console.log("Login Falhou!")  
+                            }
+                        })
+                    }else{
+                    console.log(email.value)
+                    window.alert("Erro ao logar, Verifique suas credenciais.")
+                    }
+                }
+                
+                
+               
+        </script>
+        
+        <form class="form" action="">
             <div class="card">
                 <div class="card-top">
-                    <img class="imglogin" src="../img/user.png" alt="">
                     <h2 class="title">EmpreendaMT</h2>
-                    <p>Acessar ambiente de gestão</p>
+                    <img class="imglogin" src="../img/user.png" alt="">  
                 </div>
                 
                 <div class="card-group">
                     <label>Email</label>
-                    <input type="text" name="email" placeholder="Digite seu email">
+                    <input type="text" name="email" placeholder="Digite seu email" id="mail" value="">
                 </div>
 
                 <div class="card-group">
                     <label>Senha</label>
-                    <input type="password" name="senha" placeholder="Digite sua Senha">
+                    <input type="password" name="senha" placeholder="Digite sua Senha" id="pass" value="">
                 </div>
 
                 <div class="card-group">
@@ -32,9 +78,19 @@
                 </div>
 
                 <div class="card-group btn">
-                    <button type="submit">ACESSAR</button>
+                    <button type="button" id="btn-login" onclick="acess()">Acessar ambiente de gestão</button>
+                </div>
+                <div class="card-group btn2">
+                    <button type="button"> <a href="cadastrar.html">Cadastrar</a></button>
                 </div>
             </div>
         </form>
+      
+  
+           
+        
     </body>
 </html>
+
+
+
