@@ -30,22 +30,35 @@
                     var email = document.getElementById("mail");
                     var senha = document.getElementById("pass");
                     if (email.value !="" && senha.value !="" ){
-                        firebase.auth().signInWithEmailAndPassword(email.value,senha.value);
-                        var user = firebase.auth().currentUser;
-                        if (user) {
-                            console.log("Logado com sucesso!");
-                            window.location.href = "http://localhost:8080/application/index.html";
-                        // User is signed in.
-                        } else {
-                            console.log("Login Falhou!");
-                        // No user is signed in.
-                        }
+                        firebase.auth().signInWithEmailAndPassword(email.value, senha.value)
+                        .then((userCredential) => {
+                        // Signed in
+                            var user = userCredential.user;
+                            if (user != null) {
+                                console.log("Logou crll");
+                                window.location.href = "http://localhost:8080/application/app.html";
+                            }
+                        // ...
+                         })
+                        .catch((error) => {
+                            var errorCode = error.code;
+                            var errorMessage = error.message;
+                            if (errorCode === 'auth/wrong-password') {
+                                window.location.href = "http://localhost:8080/application/login.html";
+                                alert('Wrong password.');
+                             } 
+                             else {
+                                    alert(errorMessage);
+                               }
+                        console.log(error);  
+                        });
+
+                        
                     }
                     else{
-                    window.alert("Erro ao logar, Verifique suas credenciais.");
+                    window.alert("Erro ao logar, Preencha os campos Email e Senha corretamente.");
                     }
                 }
-    
         </script>
         
         <form class="form" action="">
