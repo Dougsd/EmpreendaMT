@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
         <link rel="stylesheet" href="../css/login.css">
-        
         <script  src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
         <script  src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
         <script  src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
@@ -26,34 +25,27 @@
                         measurementId: "G-Z5VDJM5T9B"
                 };
                 
-                if (firebase.initializeApp(firebaseConfig)) {
-                    console.log("OK!")
-                } else {
-                    console.log("BAD!")
-                }
-            //Funcionou ate aki
-
+                firebase.initializeApp(firebaseConfig);
                 function acess (){
                     var email = document.getElementById("mail");
                     var senha = document.getElementById("pass");
                     if (email.value !="" && senha.value !="" ){
                         firebase.auth().signInWithEmailAndPassword(email.value,senha.value);
-                        firebase.auth().onAuthStateChanged(function(user){
-                            if (user) {
-                                console.log("Logado com sucesso!")
-                                window.location.href = "http://localhost:8080/application/index.html";
-                            }else{
-                                console.log("Login Falhou!")  
-                            }
-                        })
-                    }else{
-                    console.log(email.value)
-                    window.alert("Erro ao logar, Verifique suas credenciais.")
+                        var user = firebase.auth().currentUser;
+                        if (user) {
+                            console.log("Logado com sucesso!");
+                            window.location.href = "http://localhost:8080/application/index.html";
+                        // User is signed in.
+                        } else {
+                            console.log("Login Falhou!");
+                        // No user is signed in.
+                        }
+                    }
+                    else{
+                    window.alert("Erro ao logar, Verifique suas credenciais.");
                     }
                 }
-                
-                
-               
+    
         </script>
         
         <form class="form" action="">
@@ -85,10 +77,6 @@
                 </div>
             </div>
         </form>
-      
-  
-           
-        
     </body>
 </html>
 
