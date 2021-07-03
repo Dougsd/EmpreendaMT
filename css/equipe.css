@@ -1,0 +1,17 @@
+table{
+    
+    margin-left:-0.6%;
+    padding: 10px;
+    width: 100%;
+    
+}
+tr{
+    color: #000;
+}
+td{
+    padding: 5px;
+    border-style: solid;
+    border-color:  #92d050;
+    border-width: 2px;
+    font-size: 2vw;
+}

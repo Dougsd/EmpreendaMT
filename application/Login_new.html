@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+    <head>
+
+        <title>Login Novo</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/login.css">
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+        <script src="./index.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-storage.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
+        <script async src="login_config.js"></script>
+        
+    </head>
+
+    <body>
+        <form id="form" action="">
+            <div class="card">
+                <div class="card-top">
+                    <h2 class="title">EmpreendaMT</h2>
+                    <img class="imglogin" src="../img/user.png" alt="">  
+                </div>
+                
+                <div class="card-group">
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Digite seu email" id="mail" value="" >
+                </div>
+
+                <div class="card-group">
+                    <label>Senha</label>
+                    <input type="password" name="senha" placeholder="Digite sua Senha" id="pass" value="" >
+                </div>
+
+                <div class="card-group">
+                    <label><input type="checkbox"> Lembre-me</label>
+                </div>
+
+                <div class="card-group btn">
+                    <button type="submit" id="btn-login" onclick="">Acessar ambiente de gestão</button>
+                </div>
+                <div class="card-group btn2">
+                    <button type="button">   </button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

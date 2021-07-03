@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Sistema do Mentor</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/app_mentor.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var botao = $('.listap');
+                var dropDown = $('.ul-perfil');    
+
+                botao.on('click', function(event){
+                dropDown.stop(true,true).slideToggle();
+                event.stopPropagation();
+                });
+            });
+            $(document).ready(function() {
+                var botao = $('.listat');
+                var dropDown = $('.ul-tarefas');    
+
+                botao.on('click', function(event){
+                dropDown.stop(true,true).slideToggle();
+                event.stopPropagation();
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+<!--Barra de Navegação-->
+    <nav id="nav_bar">
+        <ul id="ul-prin">
+            <li class="bot">
+                <a href="javascript://" class="listap">PERFIL</a>
+                <ul class="ul-perfil">
+                    <li><a href="">NOME_ORG</a></li>
+                    <li><a href="">IMAGEM</a></li>
+                    <li><a href="">DATA_ING</a></li>
+                    <li><a href="">EXCLUIR CONTA</a></li>
+                </ul>
+            </li>
+            <li class="bot">
+                <a href="javascript://" class="listat">MINHAS_TAREFAS</a>
+                <ul class="ul-tarefas">
+                    <li><a href="">QUADRO_KAMBAM</a></li>
+                    <li><a href="">CADASTRAR_TABELA</a></li>
+                    <li><a href="">RESPONSÁVEL</a></li>
+                </ul>
+            </li>
+            <li class="bot"><a href="">MINHAS_TAREFAS?</a></li>
+            <li class="bot"><a href="">PROJETOS</a></li>
+            <li class="bot"><a href="">NOTIFICAÇÕES</a></li>
+            <li class="bot"><a href="">SAIR</a></li>
+        </ul>
+    </nav>
+<!--Barra de Navegação-->
+
+</body>
+</html>
