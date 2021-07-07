@@ -8,32 +8,55 @@
         <link rel="stylesheet" href="../css/app_triagem.css">
         <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
-        <script src="./index.js"></script>
         <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+        <script defer src="./index.js"></script>
         <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
         <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-storage.js"></script>
         <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
-        <script async src="config_new_users.js"></script>
+        <script defer src="config_cad.js"></script>
     </head>
     <body>
 
     <!--Barra de Navegação-->
-
-    <nav id="nav_prin">
-        <ul id="ul-prin">
-            <button>PERFIL</button>
-            <button>CADASTRAR_PROJ</button>
-            <button>PROJETOS</button>
-            <button>NOTIFICAÇÕES</button>
-            <button>CANVAS</button>
-            <button onclick="lista" class="bot_drop">CONVIDAR</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="">MENTOR</a>
-                    <a href="">CLIENTE</a>
+    <ul>
+        <nav id="menu_bar">
+            <div id="div_prin">
+                <li id="botoes"><a>PERFIL</a></li>
+                <li id="botoes"><a>CADASTRAR_PROJ</a></li>
+                <li id="botoes"><a>PROJETOS</a></li>
+                <li id="botoes"><a>NOTIFICAÇÕES</a></li>
+                <li id="botoes"><a>PERFIL</a></li>
+                <li id="botoes"><a>CONVIDAR</a></li>
+                <li id="botoes"><a>SAIR</a></li>
+            </div>
+            <ul class="hide">
+                <div id="div_show">
+                    <ul id="showw">
+                        <li>
+                        <a class="newb">TRIAGEM</a>
+                        <input type="text" value="" id="email_env" placeholder="Digite o email aqui.">
+                        <button id="email_cliente">Enviar</button>
+                        </li>
+                    </ul>
+                    <ul id="showw">
+                        <li>
+                        <a class="newb">MENTOR</a>
+                        <input type="text" value="" id="email_env" placeholder="Digite o email aqui.">
+                        <button id="email_mentor">Enviar</button>
+                        </li>
+                    </ul>
+                    <ul id="showw">
+                        <li>
+                        <a class="newb">CLIENTE</a>
+                        <input type="text" value="" id="email_env" placeholder="Digite o email aqui.">
+                        <button id="email_triagem">Enviar</button>
+                        </li>
+                    </ul>
                 </div>
-            <button>SAIR</button>
-        </ul>
-    </nav>
+            </ul>
+        </nav>
+    </ul>
+
 
 <!--Barra de Navegação-->
 
