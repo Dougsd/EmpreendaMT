@@ -16,13 +16,27 @@ nav#menu_bar div li{
     display: inline;
 }
 
-#botoes{
+nav#menu_bar div li a{
     border-radius: 5px;
     background-color: #0070c0;
     color: white;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+}
+
+#pop-up{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: red;
+    padding: 20px;
+    width: 500px;
+    height: 100px;
+    position: fixed;
+    display: none;
 }
 
 #div_prin{

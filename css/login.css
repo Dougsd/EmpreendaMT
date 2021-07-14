@@ -1,11 +1,10 @@
-
 *{
-    margin: 0;  padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    color: #323232; 
-    border: none;
-    background-color: #0070c0;
+    margin: 0;  padding: 0; /*Redefinem esses elementos da página toda*/
+    box-sizing: border-box;/*Permite utilizar padding e border nos elementos width e height*/
+    font-family: sans-serif;/*Define a fonte*/
+    color: #323232; /*Determina a cor da letra*/
+    border: none; /*Reseta e anula a existencia ou configurações de bordas nesse elemento*/
+    background-color: #0070c0; /*Especifica o fundo*/
 }
 body{
     background-color: #0070c0; /*Especifica o fundo*/
@@ -14,64 +13,64 @@ body{
 }
 
 #form {
-    width: 500px;
-    margin: auto;
-    border-radius: 10px;
-    background-color: #fff;
+    width: 500px; /*Determine a largura da área*/
+    margin: auto; /*Determina a margin automaticamente*/
+    border-radius: 10px; /*Define a curvatura das bordas*/
+    background-color: #fff; /*Especifica a cor de fundo desse elemento*/
 }
 .card{
     background-color: #fff; /*Cria um fundo branco*/
     padding: 30px; /*Define a distcia entre os elemntos com a margem do mesmo*/
     border-radius: 10px; /*Define o arredondamento das bordas*/
 }
-h2{background-color: #fff; color: #0070c0;}
+h2{background-color: #fff; color: #0070c0;} /*Define o fundo e a cor da letra*/
 .card-top {
-    background-color: #fff;
-    text-align: center;
+    background-color: #fff; /*Especifica o fundo*/
+    text-align: center; /*Alinha o texto no centro desse elemento*/
 }
 .card-group{
-    margin-bottom: 10px;
-    background-color: #fff;
-    
+    margin-bottom: 10px; /*Determina a dintância entre os elementos à 10 pixels da margem inferior*/
+    background-color: #fff; /*Determina a cor de fundo*/
+     
 }
 .card-group > label{
-    width: 100%;
-    color: #323232;
-    display: block;
-    background-color: #fff;
+    width: 100%; /*Define a largura da área em questão*/
+    color: #323232; /*Especifica a cor das letras*/
+    display: block; /*Define uma caixa na área*/
+    background-color: #fff; /*Determina a cor de fundo*/
 }
 .card-group > input{
-    border-bottom: 2px solid #323232;
-    outline: 0;
-    width: 100%;
-    height: 25px;
-    padding:10px;
-    margin-bottom: 40px;
-    font-size: .9rem;
-    background-color: #fff;
+    border-bottom: 2px solid #323232; /*Define a borda inferior*/
+    outline: 0; /*Configura mais de uma propriedade de contorno*/
+    width: 100%; /*Determina toda área para ela*/
+    height: 25px; /*Determina a altura*/
+    padding: 10px; /*Cria um espaçõ em volta*/
+    margin-bottom: 40px; /*Margem inferior*/
+    font-size: .9rem; /*Especifica o tamanho da fonte*/
+    background-color: #fff; /*Define a cor de fundo*/
 }
 .card-group input:focus{
-    border-color:lime;
+    border-color:lime; /*Define a cor da margem no momento em que receb foco*/
 }
 .card-group > button{
-    background-color: #0070c0;
-    width: 100%;
-    border-radius: 30px;
-    padding: 15px;
-    color: #fff;
-    border: 0px;
-    outline: 0;
-    cursor: pointer;
+    background-color: #0070c0; /*Define a cor de fundo*/
+    width: 100%; /*Determina o tamanho*/
+    border-radius: 30px; /*Especifica a curvatura da borda*/
+    padding: 15px; /*determina o espaço em volta das letras*/
+    color: #fff; /*Define a cor das letras */
+    border: 0px; /*Define o tamanho da borda*/
+    outline: 0; /*Reseta as propriedades de contorno*/ 
+    cursor: pointer;/*Possibilita que o mouse mude para a forma da mão*/ 
 }
 
 .imglogin{ 
-    width: 100px;
+    width: 100px; /**/
 }
 title{
-    color:#ccc;
+    color:#ccc; /*Define a cor da letra*/
 }
 .btn2 a{
-    text-decoration: none;
-    background-color: #0070c0;
-    color: #fff;
+    text-decoration: none; /**/
+    background-color: #0070c0; /**/
+    color: #fff; /**/
 }

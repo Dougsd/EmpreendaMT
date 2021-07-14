@@ -63,4 +63,12 @@ new_triagem.addEventListener("click", (even) => {
     });
     even.preventDefault();
 });
-
+//function close(){
+    //document.getElementById('.pop-up').style.display = 'none';
+    //}
+var pop_up = document.getElementById('botoes');
+console.log(pop_up);
+pop_up.addEventListener("click", (e) => {
+    var d = document.getElementById('pop-up').style.display = 'block';    
+    e.preventDefault();
+})
