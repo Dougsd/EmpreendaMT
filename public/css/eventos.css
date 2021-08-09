@@ -1,0 +1,37 @@
+#flex-box{
+    display: flex;
+    flex-wrap:wrap;
+    background-color:#fff;
+    
+ }
+ .banner{
+     text-align: center;
+     width: 250px;
+     height: auto;
+     margin: 2%;
+     padding: 1%;
+     background-color: #92d050;
+     border-radius: 20px;
+     border:solid 1px;
+     border-color: #4b5247;
+     
+ }
+
+ .banner p{
+     font-size: 1.6vmax;
+     bottom: 0;
+     
+ }
+ .banner p a{
+     font-size: 1.6vmax;
+ }
+ .banner img{
+     margin: 5px;
+     width: 80%;
+     height: auto;
+ }
+ .app-text a{
+    text-decoration: none;
+    font-size: 1.2vmax;
+ }
+ 

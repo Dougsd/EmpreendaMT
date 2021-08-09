@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Sistema da Triagem</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/app_triagem.css">
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+        <script src="../js/firebase_config.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-storage.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
+        <script defer src="../js/config_cad.js"></script>
+    </head>
+    <body>
+
+    <!--Barra de Navegação-->
+    <ul>
+        <nav id="menu_bar">
+            <div id="div_prin">
+                <li><a class="menu_bar_es">PERFIL</a></li>
+                <li><a class="menu_bar_es">CADASTRAR_PROJ</a></li>
+                <li><a class="menu_bar_es">PROJETOS</a></li>
+                <li><a class="menu_bar_es">NOTIFICAÇÕES</a></li>
+                <li><a class="menu_bar_es">PERFIL</a></li>
+                <li><button type="submit" class="menu_bar_es" id="botoes">CONVIDAR</button></li>
+                <li><a class="menu_bar_es">SAIR</a></li>
+            </div>
+            <div id="pop-up">
+                <img src="../img/close.png" id="close">
+                <ul id="showw">
+                    <li>
+                        <label for="">TRIAGEM</label> <br>
+                        <input type="text" value="" id="email_env" placeholder="E-mail">
+                        <button id="email_cliente">Enviar</button><br>
+                    </li>
+                
+                    <li>
+                        <label for="">MENTOR</label> <br>
+                        <input type="text" value="" id="email_env" placeholder="E-mail">
+                        <button id="email_mentor">Enviar</button><br>
+                    </li>
+               
+                    <li>
+                        <label for="">CLIENTE</label> <br>
+                        <input type="text" value="" id="email_env" placeholder="E-mail">
+                        <button id="email_triagem">Enviar</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </ul>
+
+<!--Barra de Navegação-->
+
+</body>
+</html>
