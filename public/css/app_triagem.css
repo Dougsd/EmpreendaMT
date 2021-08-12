@@ -88,7 +88,8 @@ div{
   
 }
 
-.email_env{
+#email_env{
+
     background-color: #fff;
     border: none;
     width: 250px;

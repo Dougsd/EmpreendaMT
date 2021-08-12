@@ -60,7 +60,6 @@ new_triagem.addEventListener("click", (even) => {
     });
     even.preventDefault();
 });
-
 var pop_up = document.getElementById('botoes');
 pop_up.addEventListener("click", (e) => {
     var d = document.getElementById('pop-up').style.display = 'block';    
