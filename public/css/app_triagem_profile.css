@@ -1,0 +1,24 @@
+/*#92d050 verde
+/*#0070c0 azul
+/* #fff   branco
+*/
+.div_navigation{
+    width: 100%;
+    height: 300px;
+    background-color:#0070c0;
+}
+.div_profile {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.div_profile img{ width: 50px; height: auto;}
+.div_profile label{font-size: 14px;}
+.div_profile .alerts {width: 50px; height: auto;}
+.div_profile .alerts img { width: 50px; height: auto;}
+.div_profile .alerts label {font-size: 14px;}

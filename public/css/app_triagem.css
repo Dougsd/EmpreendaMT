@@ -1,0 +1,105 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: thistle;
+}
+div{
+    list-style: none;
+}
+
+#menu_bar div li{
+    list-style: none;
+    font-family: sans-serif;
+    display: inline;
+}
+
+.menu_bar_es{
+    background-color: #0070c0;
+    color: #fff;
+    line-height: 45px;
+    cursor: pointer;
+    list-style: none;
+    float: left;
+    padding: 0px 5px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+#pop-up{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    background-color: #fff;
+    padding: 20px;
+    width: 500px;
+    height: 225px;
+    display: none;
+    border-radius: 20px;
+}
+
+#menu_bar{
+    background-color: #0070c0;
+    width: 100%;
+    height: 50px;
+}
+#div_prin{
+    width: 90%;
+    line-height: 10px;
+    margin: auto;
+}
+#pop-up ul{
+    background-color: #fff;
+}
+#pop-up ul li{
+    background-color: #fff;
+}
+#pop-up ul li input{
+    background-color: #fff;
+    width: 400px;
+    padding: 5px;
+    margin: 5px;
+}
+#pop-up ul li input:focus{
+    border-bottom: 1px solid #333333;
+}
+#pop-up ul li label{
+    background-color: #fff;
+    
+}
+
+#close{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: relative;
+    left: 97%;
+    bottom: 5%;
+}
+
+#email_cliente, #email_mentor, #email_triagem{
+    background-color: #fff;
+    border: none;
+    position: relative;
+
+    cursor: pointer;
+  
+}
+
+.email_env{
+    background-color: #fff;
+    border: none;
+    width: 250px;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    padding: 0px 10px;
+}
+
+a:hover{
+    background-color: rgba(0,112,192,.8);
+}

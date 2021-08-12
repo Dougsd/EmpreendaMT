@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="canvas.css">
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+        <script src="../public/js/firebase_config.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+        <script defer src="canvas.js"></script>
+
+    </head>
+    <body>
+        <div id="main_canvas">
+            <div class="parc_chav"><!--Parceiros chave-->
+                <li>Parceiros chave</li>
+                <canvas id="canvas"></canvas>
+                <li id="parc_chav" onclick="">+ Adicionar</li>
+            </div>
+            <div id="pop_up">
+                <img id="close" src="../public/img/close.png">
+                <li>Digite aqui:</li>
+                <input id="texto" type="text">
+                <a id="button">Enviar</a>
+            </div>
+        </div>
+        
+    </body>
+</html>

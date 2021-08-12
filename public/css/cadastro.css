@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #323232;
+    border: none;
+}
+a{
+    color: #0070c0;
+}
+
+body{
+    padding-top: 5vh;
+    background-size: cover;
+    background-color: #0070c0;
+    font-family: sans-serif;
+}
+#main-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#fff;
+    border-radius: 10px;
+    padding: 25px;
+}
+#main-container h1{
+    color: #0070c0;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem; /*Fonte adaptada ao tamanho da foote do elemento root, ideal para adapatar a dispositivos com tela pequena*/
+
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*Cria um espaco entre os elementos*/
+    padding-top: 40px;
+}
+
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing{
+    margin-right: 2.5%;
+}
+
+label{
+    font-weight: bold; /*Deixa em negrito*/
+    font-size: .9rem;
+}
+
+input{
+    border-bottom: 2px solid #323232;
+    padding:10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+input:focus{
+    border-color:lime;
+
+}
+
+input[type="submit"]{
+    background-color: #0070c0;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.error-validation{
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: .9rem;
+}
+.template{
+    display: none;
+}
+
+input, label{
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus{
+    outline: none;
+}
