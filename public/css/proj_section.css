@@ -1,0 +1,80 @@
+#projeto_info{
+    background-color: #0ff271;
+    border-radius: 10px;
+    height: auto;
+    padding: 5px;
+    display: grid;
+}
+#proj_name_input{
+    width: 87%;
+}
+#cidade_input{
+    width: 75%;
+}
+#descricao_textarea{
+    max-width: 650px;
+    max-height: 200px;
+    min-width: 100px;
+    min-height: 40px;
+    margin: 5px;
+    font-family: 'Lato', serif;
+    outline: 0;
+    justify-content: initial;
+}
+#areatexto{
+    display: grid;
+    max-height: 300px;
+}
+#quant_mem{
+    background-color: #0ff271;
+}
+#confir_mem{
+    background-color: #0ff271;
+    font-family: 'Lato', serif;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#confir_mem:hover{
+    border: 2px solid blue;
+}
+
+#classificacao{
+    background-color: #0ff271;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#formato {
+  background-color: #0ff271;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+}
+#mentorias {
+  background-color: #0ff271;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+}
+#agenda{
+    background-color: #0ff271;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+
+#tabela_agenda{
+    text-align: center;
+    font-family: 'Lato';
+    border: 1px solid black;
+    margin: 10px;
+}

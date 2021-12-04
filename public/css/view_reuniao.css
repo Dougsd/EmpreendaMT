@@ -1,0 +1,15 @@
+#add_reuniao{
+    padding: 10px;
+    margin: 20px auto 20px auto;
+    background-color: #09a94f;
+    width: 360px;
+}
+#add_reuniao img{
+    width: 20px;
+    height: 20px;   
+}
+#add_reuniao button{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}

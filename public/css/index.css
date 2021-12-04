@@ -1,0 +1,37 @@
+.conteiner{
+    margin: 0;                 /*Margens em torno da divisão*/               
+    display: flex;             /*Trona o display flex*/
+    flex-direction: column;    /*Define posição de organização*/
+    padding-bottom: 0;         /*Define distancia entre a borda inferior e o conteúdo*/
+
+}
+.box-top{
+    width: 100%;                /*Largura da divisão*/
+    height: auto;               /*Altura da divisão*/
+    background-color:#92d050; /*Cor de fundo*/
+}
+.box-bottom{
+    text-align: center;          /*Alinha conteúdo ao centro*/
+    width: 100%;                 /*Largura da divisão*/
+    height:auto;                 /*Altura da divisão*/
+    background-color: #92d050; /*Cor de fundo*/
+
+}
+.box-bottom video{               
+    position: relative;          /*Permite flutuar ítens dessa divisão*/
+    width: 70vw;                 /*Largura da divisão*/
+    height: auto;                /*Altura da divisão*/
+    
+}
+.box-top p{
+    width: 100%;                 /*Largura da divisão*/
+    height: auto;                /*Altura da divisão*/
+    text-align: justify;         /*Justifica o texto*/
+    font-size: 1.4vmax;          /*Tamanho da fonte*/
+}
+.area-textual{                   /*Margens entre as bordas e o conteúdo*/
+    margin-top: 1%;              /*Margem do topo*/
+    margin-left: 15%;            /*Margem da esquerda*/
+    margin-right: 15%;           /*Margem da direita*/
+    margin-bottom: 1%;           /*Margem inferior*/
+}

@@ -1,0 +1,36 @@
+
+body{
+    background-color:#fff;
+    max-height: 100%;
+}
+footer{
+    background-color: #0070c0;
+    color: #fff;
+    text-justify: auto;
+    text-align: center;
+    
+}
+
+.Footer footer address{
+    font-size: 1.3vw;
+    font-size: 1.250vmax;
+}
+.Footer{
+    width: 100%;
+    bottom: 0;
+    
+}
+h2{
+    text-align: center;
+    color:  #92d050;
+}
+
+.Geral{
+    position: relative;
+    min-height: 100%;
+    
+}
+*  {
+    margin:0;
+    padding:0;
+}

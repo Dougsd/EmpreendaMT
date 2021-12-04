@@ -1,0 +1,81 @@
+
+
+
+
+/*   
+#div_to_edit{
+    background-color: #09a94f;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 55%;
+    height: auto;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    margin: 20px auto 20px auto;
+}
+.separando_escolhas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #ddd;
+}
+.div_separar{
+    width: 100%;
+    background-color: #ddd;
+}
+.buttons{
+    background-color: #0ff271;
+    padding: 5px;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#img_close,.img_close{
+    width: 20px;
+    height: 20px;
+    background-color: #09a94f;
+    float: right;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.divs{
+    width: 98.8%;
+    display: flex;
+    border: 1px solid black;
+    margin: 5px;
+    background-color: #ddd;
+}
+.labels{
+    width: 20%;
+    margin: 5px;
+    background-color: #ddd;
+}
+.labels_checkbox{
+    width: 95%;
+    margin: 5px;
+    background-color: #ddd;
+}
+.inputs_radio{
+    margin: 5px;
+}
+#div_button_enviar{
+    background-color: #0ff271;
+    display: grid;
+    justify-content: center;
+}
+p{
+    margin: 5px;
+    background-color: #ddd;
+}
+p:focus{
+    outline: 0;
+    border-bottom: 2px solid #09a94f;
+}
+#canvas_to_edit{
+    position: absolute;
+}  */

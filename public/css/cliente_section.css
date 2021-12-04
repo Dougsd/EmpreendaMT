@@ -1,0 +1,28 @@
+#client_info{
+    background-color: #0ff271;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+}
+
+#numero_input{
+    width: 70%;
+}
+#div_to_button1, #div_to_button2{
+    position: relative;
+    border-radius: 5px;
+    display: grid;
+    justify-content: center;
+}
+#name_input{
+    width: 80%;
+}
+#cpf_input{
+    width: 70%;
+}
+#email_input{
+    width: 90%;
+}
+#numero_input{
+    width: 80%;
+}

@@ -1,0 +1,102 @@
+.div_to_opt{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    background-color: #0ff271;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px;
+}
+#div_to_opt1, #div_to_opt2{
+    display: none;
+}
+.titulo_form{
+    font-size: 30px;
+    font-family: 'Lato', 'sans-serif';
+    font-weight: bold;
+    text-align: center;
+    display: grid;
+    background-color: #0ff271;
+    width: 97%;
+    margin: 5px;
+}
+.subtitulo_form{
+    font-family: 'Lato', serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    background-color: #0ff271;
+    width: 100%;
+}
+.labels_text{
+    font-family: 'Lato', serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    background-color: #0ff271;
+
+}
+.form_elem{
+    background-color: #0ff271;
+    outline: 0;
+    border: none;
+    font-size: 15px;
+    border-bottom: 2px solid black;
+    margin-left: 5px;
+    float: right;
+    margin: 5px;
+}
+.div_to_two{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mid_espace{
+    width: 50%;
+    flex: 1 1 45%;
+    justify-content: space-between;
+    display: flex;
+    background-color: #0ff271;
+}
+.full_espace{
+    flex: 1 1 100%;
+    background-color: #0ff271;
+    justify-content: space-between;
+    display: flex;
+}
+.options_quest{
+    width: 60%;
+    margin: 5px;
+    background-color: #0ff271;
+    font-family: 'Lato', serif;
+}
+.form_elem_projeto-checkbox{
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+}
+.img_close_form{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    position: relative;
+    display: grid;
+    float: right;
+    background-color: #0ff271;
+    cursor: pointer;
+}
+.button_cliente{
+    outline: 0;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0ff271;
+    color: black;
+    font-family: 'Lato', serif;
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+}

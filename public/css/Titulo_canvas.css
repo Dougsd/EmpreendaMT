@@ -1,0 +1,74 @@
+/*Define a cor de fundo, o seu tamanho, comportamento, uma borda inferior e um espaçamento externo entre os outros elementos*/
+    .div_to_label{
+        background-color: #0ff271;
+        border: 1px solid black;
+        width: 93%;
+        height: 10%;
+        border-radius: 5px;
+        position: absolute;
+        margin: 5px;
+        display: none;
+    }
+/*Define a cor de fundo, o seu tamanho, comportamento, uma borda inferior e um espaçamento externo entre os outros elementos*/
+
+/*Utiliza uma fonte exportada e a coloca em negrito, define a cor de fundo, o comportamento e um espaçamento externo entre os outros elementos*/
+    .label_to_input{
+        background-color: #0ff271;
+        font-family: 'Lato', serif;
+        font-weight: bold;
+        margin: 5px;
+        
+    }
+/*Utiliza uma fonte exportada e a coloca em negrito, define a cor de fundo, o comportamento e um espaçamento externo entre os outros elementos*/
+
+/*Utiliza cor de fundo e de fonte pré-determinada, define borda inferior, um espaçamento entre os elementos externos, a fonte a ser utilizada, à coloca em negrito*/
+    .canvas_tittle{
+        background-color: #0ff271;
+        border: none;
+        border-bottom: 2px solid black;
+        margin: 5px;
+        width: 75%;
+        height: 30%;
+        font-family: 'Lato', serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+        outline: 0;
+    }
+/*Utiliza cor de fundo e de fonte pré-determinada, define borda inferior, um espaçamento entre os elementos externos, a fonte a ser utilizada, à coloca em negrito*/
+
+/*Determina a posição, comportamento, espaçamento interno e externo, cor de fundo e da fonte, borda solida arredondada, a fonte, o tamanho da fonte e a coloca em negrito*/
+    .button_tittle{
+        background-color: #0ff271;
+        border: 1px solid black;
+        color: black;
+        border-radius: 5px;
+        float: right;
+        position: relative;
+        bottom: 5%;
+        margin: 5px;
+        padding: 3px;
+        font-family: 'Lato', serif;
+        font-size: 15px;
+        font-weight: bold;
+    }
+/*Determina a posição, comportamento, espaçamento interno e externo, cor de fundo e da fonte, borda solida arredondada, a fonte, o tamanho da fonte e a coloca em negrito*/
+
+/*Muda cor da borda quando o mouse passa por cima*/
+    .button_tittle:hover{
+        border-color: white;
+    }
+/*Muda cor da borda quando o mouse passa por cima*/
+
+/*Define a cor de fundo, o tamanho, posição, e comportamento*/
+    .tittle_close{
+        background-color: #0ff271;
+        width: 15px;
+        height: 15px;
+        position: relative;
+        float: right;
+        bottom: 80%;
+        left: 17%;
+        cursor: pointer;
+    }
+/*Define a cor de fundo, o tamanho, posição, e comportamento*/

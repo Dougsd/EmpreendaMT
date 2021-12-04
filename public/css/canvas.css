@@ -1,0 +1,129 @@
+/*Reseta os espaçamentos da página e determina a cor de fundo*/
+
+/*Reseta os espaçamentos da página e determina a cor de fundo*/
+
+/*Retira a utilização de borda no elemento button*/
+    button{
+        border: none;
+    }
+/*Retira a utilização de borda no elemento button*/
+
+/*Define o tamanho, posição, seu comportamento e sua cor de fundo*/
+.editar_canvas{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    right: 5%;
+    bottom: 30%;
+    background-color: #0ff271;
+}
+/*Define o tamanho, posição, seu comportamento e sua cor de fundo*/
+
+/*Especifica o espaço a ser usado pelo elemento e os define como flexiveis sendo pocisionados em linhas diferentes*/
+    .container{
+        flex-wrap: wrap;
+        position: relative;
+        top: 15%;
+        /* margin: 15px; */
+        background-color: #09a94f;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        display:none;
+    }
+/*Especifica o espaço a ser usado pelo elemento e os define como flexiveis sendo pocisionados em linhas diferentes*/
+/* #body_canvas1, #body_canvas2, #body_canvas3{
+    margin-right: 15px;
+} */
+/*Define a posição, o tamanho com um minimo, cor de fundo, arredonda a margem e da um espaçamento externo*/
+    .main{  
+        background-color: #ddd;
+        min-width: 325px;
+        min-height: 500px;
+        height: auto;
+        border-radius: 5px;
+        top: 5%;
+        /* margin: auto; */
+        margin: 10px auto 10px auto;
+    }
+/*Define a posição, o tamanho com um minimo, cor de fundo, arredonda a margem e da um espaçamento externo*/
+
+/*Determina a altura, cor da fonte e fundo, borda inferior, e mantém a barra de rolagem no eixo y escondida*/
+    .top {
+        height: 50px;
+        overflow-y: hidden;
+        color:black;
+        border-bottom: 1px solid #333;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: #0ff271;
+    }
+/*Determina a altura, cor da fonte e fundo, borda inferior, e mantém a barra de rolagem no eixo y escondida*/
+
+/*Define a cor de fundo, a fonte, centraliza a texto, e coloca um espaçamento na parte superior*/
+    .top h2{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 18px;
+        background-color: #0ff271;
+        font-family: 'Lato', serif;
+    }
+/*Define a cor de fundo, a fonte, centraliza a texto, e coloca um espaçamento na parte superior*/
+
+/*Faz que barra de rolagens aparecem se necessário, define espaçamento interno, cor de funso e altura*/
+    .mid{
+        padding:5px;
+        height: 450px;
+        background-color: #ddd;
+        overflow: auto;
+    }
+/*Faz que barra de rolagens aparecem se necessário, define espaçamento interno, cor de funso e altura*/
+
+/*Especifica a cor da fonte e fundo, fonte, posição, tamanho e uma borda superior*/
+    .bot{
+        border-top:1px solid #333;
+        height: 50px;
+        width:100%;
+        font-size: 18px;
+        color:black;
+        bottom: 0;
+        background-color: #0ff271;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+/*Especifica a cor da fonte e fundo, fonte, posição, tamanho e uma borda superior*/
+
+/*Define a posição e o tamanho da div juntamente com a cor de fundo*/
+    .btn_center{
+        position:relative;
+        height:50px;
+        margin-left: auto;
+        margin-right: auto;
+        width:85px;
+        background-color: #0ff271;
+    }
+/*Define a posição e o tamanho da div juntamente com a cor de fundo*/
+
+/*Define a posição do elemento e o seu comportamento, junto com a cor de fundo e fonte, a fonte utilizada e o seu tamanho*/
+    .add_div{
+        position:relative;
+        color: black;
+        font-family: 'Lato', serif;
+        font-weight: bold;
+        font-size: 18px;
+        background-color: #0ff271;
+        margin-top:10px;
+        margin-left:auto;
+        margin-right: auto;
+        border-radius: 5px;
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .add_div:hover{
+        border-color: white;
+    }
+/*Define a posição do elemento e o seu comportamento, junto com a cor de fundo e fonte, a fonte utilizada e o seu tamanho*/

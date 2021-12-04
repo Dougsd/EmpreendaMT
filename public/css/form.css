@@ -1,0 +1,183 @@
+#formulario_proj{
+    position: absolute;
+    width: 60%;
+    height: auto;
+    margin: 10px;
+    top: 0%;
+    left: 20%;
+    display: none;
+}
+#enviar_form{
+    width: 90px;
+    height: auto;
+    background-color: black;
+    color: white;
+    font-family: 'Lato', serif;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 350px;
+}
+
+/*Sessão do Cliente*/
+#client_info{
+    background-color: #ddd;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid black;
+    border-bottom: none;
+}
+#img_close_form{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: #ddd;
+    cursor: pointer;
+}
+#numero_input{
+    width: 75%;
+}
+/*Sessão do Cliente*/
+
+/*Sessão do Projeto*/
+#projeto_info{
+    background-color: #ddd;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    padding-bottom: 40px;
+    display: grid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid black;
+    border-top: none;
+}
+#proj_name_input{
+    width: 87%;
+}
+#cidade_input{
+    width: 75%;
+}
+#descricao_textarea{
+    max-width: 820px;
+    max-height: 300px;
+    min-width: 200px;
+    min-height: 40px;
+    margin: 5px;
+    font-family: 'Lato', serif;
+    outline: 0;
+}
+#areatexto{
+    display: grid;
+    max-width: 60%;
+    max-height: 300px;
+}
+
+#classificacao{
+    background-color: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#formato {
+  background-color: #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+}
+#mentorias {
+  background-color: #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+}
+#agenda{
+    background-color: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+.options_quest{
+    width: 60%;
+    margin: 5px;
+    background-color: #ddd;
+    font-family: 'Lato', serif;
+}
+.form_elem_projeto-checkbox{
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+}
+#tabela_agenda{
+    text-align: center;
+    font-family: 'Lato';
+    border: 1px solid black;
+    margin: 10px;
+}
+
+/*Sessão do Projeto*/
+.titulo_form{
+    font-size: 30px;
+    font-family: 'Lato', 'sans-serif';
+    font-weight: bold;
+    text-align: center;
+    background-color: #ddd;
+    width: 100%;
+}
+.subtitulo_form{
+    font-family: 'Lato', serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    background-color: #ddd;
+    width: 100%;
+}
+.labels_text{
+    font-family: 'Lato', serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    background-color: #ddd;
+
+}
+.form_elem{
+    background-color: #ddd;
+    outline: 0;
+    border: none;
+    font-size: 15px;
+    width: 70%;
+    border-bottom: 2px solid black;
+    margin-left: 5px;
+    float: right;
+    margin: 5px;
+}
+
+.div_to_two{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mid_espace{
+    flex: 1 1 45%;
+    justify-content: space-between;
+    display: flex;
+    background-color: #ddd;
+}
+.full_espace{
+    flex: 1 1 100%;
+    background-color: #ddd;
+    margin: 10px;
+}

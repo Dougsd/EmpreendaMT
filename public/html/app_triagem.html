@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Sistema  Triagem</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/app_triagem.css">
+        <link rel="stylesheet" href="../css/formulario.css">
+        <link rel="stylesheet" href="../css/proj_section.css">
+        <link rel="stylesheet" href="../css/cliente_section.css">
+        <link rel="stylesheet" href="../css/project.css">
+        <link rel="stylesheet" href="../css/editando_proj.css">
+        <link rel="stylesheet" href="../css/canvas.css">
+        <link rel="stylesheet" href="../css/canvas_pop_up.css">
+        <link rel="stylesheet" href="../css/Titulo_canvas.css">
+        <link rel="stylesheet" href="../css/view_reuniao.css">
+
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+        <script defer src="../js/urls.js"></script>
+        <script src="../js/project.js"></script>
+        <script defer src="../js/firebase_config.js"></script>
+        <script defer src="../js/config_cad.js"></script>
+        <script defer src="../js/verifyLogin.js"></script>
+        <script defer src="../js/formulario_triagem.js"></script>
+        <script src="../js/view.js"></script>
+        <script defer src="../js/build_project.js"></script>
+        <script defer src="../js/show_proj.js"></script>
+        <script defer src="../js/userProfile.js"></script>
+       
+        <script defer src="../js/canvas_pop_up.js"></script>
+        <script defer src="../js/canvas_functions.js"></script>
+        <script defer src="../js/canvas_div.js"></script>
+        <script defer src="../js/drag_drop.js"></script>
+        <script defer src="../js/tittle_canvas.js"></script>
+        <!-- <script  defer src="../bundle.js"></script> -->
+    </head>
+    <body onload="show_info()">
+
+        <div id="profile" >
+            <div id="img_perfil">
+                <img id="img_perfil1" src="" alt="">
+            </div>
+            <div id="usuario">
+                <div id="box1">
+                    <p id="name_user"></p><!-- Nome Completo -->
+                </div>
+                <div id="box2">
+                    <div id="tittle">
+                        <h2 >Triagem</h2><!-- Sistema Triagem -->
+                    </div>
+
+                    <div id="pesquisa">
+                        <input type="text" id="barra_pesquisa" placeholder="Nome do Projeto.">
+                        <img id="img_search" src="../img/pesquisa-de-lupa.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="box">
+            <div id="projetos">
+                <!-- Div modelo para apresentar um projeto -->
+                <!-- Utilizar mecanismo para gerar essas div`s de acordo com 
+                o banco de dados -->
+                
+            </div>
+            <div id="menu">
+                
+                <img class="add_proj" id="img_open_form" src="../img/plus.png">
+                
+                <img class="add_proj" id="logout" src="../img/logout2.png">
+            </div>
+            <div id="canvas_to_edit">
+                <!--conteiner é definido para que os elementos possam ser distribuidos de forma reponsiva pelo quantidade de pixels no monitor de cada usuário-->
+            </div>
+        </div>
+        <div class="container" id="canvas">
+
+            <!--Main é utilizada para definir a separação visual de cada canvas-->
+            <!--Definição da estrutura do primeiro canvas-->
+            <div class="main" id="body_canvas1">
+                <div class="top">
+                    <h2 id="titulo1">Exemplo1</h2>
+                    <img class="editar_canvas" id="lapis1" src="../img/lapis.png">
+                </div>
+
+                <!--Definição da área e sua estrutura que irá conter as divs que serão geradas-->
+                <div class="mid"id="col1">
+
+                    <!--Área na qual o usuário digita o título desejado para o canvas em questão-->
+                    <div id="div_to_label1" class="div_to_label">
+                        <label class="label_to_input" id="label_to_input1">Digite o título para a canvas:</label>
+                        <input type="text" class="canvas_tittle" id="canvas_tittle1">
+                        <button type="button" class="button_tittle" id="button_tittle1">Enviar</button>
+                        <img class="tittle_close" id="tittle_close1" src="../img/close.png">
+                    </div>
+                    <!--Área na qual o usuário digita o título desejado para o canvas em questão-->
+
+                    <div class="pop_up" id="pop_up1">
+                        <img class="close" id="img_closePop_up1" src="../img/close.png"></br>
+
+                        <!--Áreas de digitação-->
+                        <label class="content1">Título:</label>
+                        </br>
+                        <input type="text" id="tittle1" class="titulo_Postit" value="">
+                    
+                        </br></br>
+
+                        <label class="content2">Descrição:</label>
+                        </br>
+                        <textarea class="areatexto" name="Descrição" autocapitalize="words" spellcheck="true"  id="areatexto1" cols="30" rows="10"></textarea>
+                        </br>
+                        <!--Áreas de digitação-->
+                        
+                        <!--Área para escolher a cor da fonte-->
+                        <label class="cores">Cor da fonte: </label>
+                        <select id="choises_fon1" class="fonte_choises">
+                            <option class="options_fonte" id="blackFon1" selected value="black">Preto</option>
+                            <option class="options_fonte" id="whiteFon1" value="white">Branco</option>
+                            <option class="options_fonte" id="orangeFon1" value="orange">Orange</option>
+                            <option class="options_fonte" id="greenFon1" value="green">Verde</option>
+                            <option class="options_fonte" id="purpleFon1" value="purple">Roxo</option>
+                            <option class="options_fonte" id="pinkFon1" value="pink">Rosa</option>
+                            <option class="options_fonte" id="yellowFon1" value="yellow">Amarelo</option>
+                            <option class="options_fonte" id="brownFon1" value="brown">Marrom</option>
+                        </select>
+                        <!--Área para escolher a cor da fonte-->
+
+                        </br>
+
+                        <!--Área para escolher a cor do fundo-->
+                        <label class="cores">Cor de fundo:</label>
+                        <select id="choises_fun1" class="fundo_choises">
+                            <option class="options_fundo" id="blackFun1" selected value="black">Preto</option>
+                            <option class="options_fundo" id="whiteFun1" value="white">Branco</option>
+                            <option class="options_fundo" id="orangeFun1" value="orange">Orange</option>
+                            <option class="options_fundo" id="greenFun1" value="green">Verde</option>
+                            <option class="options_fundo" id="purpleFun1" value="purple">Roxo</option>
+                            <option class="options_fundo" id="pinkFun1" value="pink">Rosa</option>
+                            <option class="options_fundo" id="yellowFun1" value="yellow">Amarelo</option>
+                            <option class="options_fundo" id="brownFun1" value="brown">Marrom</option>
+                        </select>
+                        <!--Área para escolher a cor do fundo-->
+
+                        </br>
+                
+                        <button id="confirmar1" class="confirmar" onclick="newdiv1()">Confirmar</button>
+                    </div>
+                </div>
+                <!--Definição da área e sua estrutura que irá conter as divs que serão geradas-->
+
+                <!--Div para separar o button para uma melhor estilização-->
+                <div class="bot">
+                    <div class="btn_center">
+                        <button class="add_div" id="canvas1">Adicionar</button>
+                    </div>     
+                </div>
+                <!--Div para separar o button para uma melhor estilização-->
+                
+            </div>
+            <!--Definição da estrutura do primeiro canvas-->
+            <!--Main é utilizada para definir a separação visual de cada canvas-->
+
+            <!--Main é utilizada para definir a separação visual de cada canvas-->
+            <!--Definição da estrutura do segundo canvas-->
+            <div class="main" id="body_canvas2">
+                <div class="top">
+                    <h2 id="titulo2">Exemplo2</h2>
+                    <img class="editar_canvas" id="lapis2" src="../img/lapis.png">
+                </div>
+            
+                <!--Definição da área e sua estrutura que irá conter as divs que serão geradas-->
+                <div class="mid" id="col2">
+
+                    <!--Área na qual o usuário digita o título desejado para o canvas em questão-->
+                    <div id="div_to_label2" class="div_to_label">
+                        <label class="label_to_input" id="label_to_input2">Digite o título para a canvas:</label>
+                        <input type="text" class="canvas_tittle" id="canvas_tittle2">
+                        <button type="button" class="button_tittle" id="button_tittle2">Enviar</button>
+                        <img class="tittle_close" id="tittle_close2" src="../img/close.png">
+                    </div>
+                    <!--Área na qual o usuário digita o título desejado para o canvas em questão-->
+
+                    <div class="pop_up" id="pop_up2">
+                        <img class="close" id="img_closePop_up2" src="../img/close.png"></br>
+
+                        <!--Áreas de digitação-->
+                        <label class="content1">Título:</label>
+                        </br>
+                        <input type="text" id="tittle2" class="titulo_Postit" value="">
+                    
+                        </br></br>
+
+                        <label class="content2">Descrição:</label>
+                        </br>
+                        <textarea class="areatexto" name="Descrição" autocapitalize="words" spellcheck="true" id="areatexto2" cols="30" rows="10"></textarea>
+                        </br>
+                        <!--Áreas de digitação-->
+                    
+                        <!--Área para escolher a cor da fonte-->
+                        <label class="cores">Cor da fonte:</label>
+                        <select id="choises_fon2" class="fonte_choises">
+                            <option class="options_fonte" id="blackFon2" selected value="black">Preto</option>
+                            <option class="options_fonte" id="whiteFon2" value="white">Branco</option>
+                            <option class="options_fonte" id="orangeFon2" value="orange">Orange</option>
+                            <option class="options_fonte" id="greenFon2" value="green">Verde</option>
+                            <option class="options_fonte" id="purpleFon2" value="purple">Roxo</option>
+                            <option class="options_fonte" id="pinkFon2" value="pink">Rosa</option>
+                            <option class="options_fonte" id="yellowFon2" value="yellow">Amarelo</option>
+                            <option class="options_fonte" id="brownFon2" value="brown">Marrom</option>
+                        </select>
+                        <!--Área para escolher a cor da fonte-->
+
+                        </br>
+                        
+                        <!--Área para escolher a cor do fundo-->
+                        <label class="cores">Cor de fundo:</label>
+                        <select id="choises_fun2" class="fundo_choises">
+                            <option class="options_fundo" id="blackFun2" selected value="black">Preto</option>
+                            <option class="options_fundo" id="whiteFun2" value="white">Branco</option>
+                            <option class="options_fundo" id="orangeFun2" value="orange">Orange</option>
+                            <option class="options_fundo" id="greenFun2" value="green">Verde</option>
+                            <option class="options_fundo" id="purpleFun2" value="purple">Roxo</option>
+                            <option class="options_fundo" id="pinkFun2" value="pink">Rosa</option>
+                            <option class="options_fundo" id="yellowFun2" value="yellow">Amarelo</option>
+                            <option class="options_fundo" id="brownFun2" value="brown">Marrom</option>
+                        </select>
+                        <!--Área para escolher a cor do fundo-->
+                        
+                        </br>
+                        <button id="confirmar2" class="confirmar" onclick="newdiv2()">Confirmar</button>
+                    </div> 
+                </div>
+                <!--Definição da área e sua estrutura que irá conter as divs que serão geradas-->
+                
+                <!--Div para separar o button para uma melhor estilização-->
+                <div class="bot">
+                    <div class="btn_center">
+                        <button class="add_div" id="canvas2">Adicionar</button>
+                    </div>  
+                </div>
+                <!--Div para separar o button para uma melhor estilização-->
+            </div>
+                
+            <div class="main" id="body_canvas3">
+                <div class="top">
+                    <h2 id="titulo3">Exemplo3</h2>
+                    <img class="editar_canvas" id="lapis3" src="../img/lapis.png">
+                </div>
+
+                <!--Definição da área e sua estrutura que irá conter as divs que serão geradas-->
+                <div class="mid" id="col3">
+
+                    <!--Área na qual o usuário digita o título desejado para o canvas em questão-->
+                    <div id="div_to_label3" class="div_to_label">
+                        <label class="label_to_input" id="label_to_input3">Digite o título para a canvas:</label>
+                        <input type="text" class="canvas_tittle" id="canvas_tittle3">
+                        <button type="button" class="button_tittle" id="button_tittle3">Enviar</button>
+                        <img class="tittle_close" id="tittle_close3" src="../img/close.png">
+                    </div>
+                    <!--Área na qual o usuário digita o título desejado para o canvas em questão-->
+
+                    <div class="pop_up" id="pop_up3">
+                        
+                        <img class="close" id="img_closePop_up3" src="../img/close.png"></br>
+
+                        <!--Áreas de digitação-->
+                        <label class="content1">Título:</label>
+                        </br>
+                        <input type="text" id="tittle3" class="titulo_Postit" value="">
+
+                        </br></br>
+
+                        <label class="content2">Descrição:</label>
+                        </br>
+                        <textarea class="areatexto" name="Descrição" autocapitalize="words" spellcheck="true" id="areatexto3" cols="30" rows="10" ></textarea>
+                        </br>
+                        <!--Áreas de digitação-->
+
+                        <!--Área para escolher a cor da fonte-->
+                        <label class="cores">Cor da fonte:</label>
+                        <select id="choises_fon3" class="fonte_choises">
+                            <option class="options_fonte" id="blackFon3" selected value="black">Preto</option>
+                            <option class="options_fonte" id="whiteFon3" value="white">Branco</option>
+                            <option class="options_fonte" id="orangeFon3" value="orange">Orange</option>
+                            <option class="options_fonte" id="greenFon3" value="green">Verde</option>
+                            <option class="options_fonte" id="purpleFon3" value="purple">Roxo</option>
+                            <option class="options_fonte" id="pinkFon3" value="pink">Rosa</option>
+                            <option class="options_fonte" id="yellowFon3" value="yellow">Amarelo</option>
+                            <option class="options_fonte" id="brownFon3" value="brown">Marrom</option>
+                        </select>
+                        <!--Área para escolher a cor da fonte-->
+
+                        </br>
+
+                        <!--Área para escolher a cor do fundo-->
+                        <label class="cores">Cor de fundo:</label>
+                        <select id="choises_fun3" class="fundo_choises">
+                            <option class="options_fundo" id="blackFun3" selected value="black">Preto</option>
+                            <option class="options_fundo" id="whiteFun3" value="white">Branco</option>
+                            <option class="options_fundo" id="orangeFun3" value="orange">Orange</option>
+                            <option class="options_fundo" id="greenFun3" value="green">Verde</option>
+                            <option class="options_fundo" id="purpleFun3" value="purple">Roxo</option>
+                            <option class="options_fundo" id="pinkFun3" value="pink">Rosa</option>
+                            <option class="options_fundo" id="yellowFun3" value="yellow">Amarelo</option>
+                            <option class="options_fundo" id="brownFun3" value="brown">Marrom</option>
+                        </select>
+                        <!--Área para escolher a cor do fundo-->
+
+                        </br>
+                        <button id="confirmar3" class="confirmar" onclick="newdiv3()">Confirmar</button>
+                    </div>
+                </div>
+                <!--Definição da área e sua estrutura que irá conter as divs que serão geradas-->
+
+                <!--Div para separar o button para uma melhor estilização-->
+                <div class="bot">
+                    <div class="btn_center">
+                        <button class="add_div" id="canvas3">Adicionar</button>
+                    </div>
+                </div>
+                <!--Div para separar o button para uma melhor estilização-->
+            </div>
+
+            <div class="main" id="body_canvas4">
+                <div class="top">
+                    <h2 id="titulo4">Exemplo4</h2>
+                    <img class="editar_canvas" id="lapis4" src="../img/lapis.png">
+                </div>
+
+                <!--Definição da área e sua estrutura que irá conter as divs que serão geradas-->
+                <div class="mid" id="col4">
+
+                    <!--Área na qual o usuário digita o título desejado para o canvas em questão-->
+                    <div id="div_to_label4" class="div_to_label">
+                        <label class="label_to_input" id="label_to_input4">Digite o título para a canvas:</label>
+                        <input type="text" class="canvas_tittle" id="canvas_tittle4">
+                        <button type="button" class="button_tittle" id="button_tittle4">Enviar</button>
+                        <img class="tittle_close" id="tittle_close4" src="../img/close.png">
+                    </div>
+                    <!--Área na qual o usuário digita o título desejado para o canvas em questão-->
+
+                    <div class="pop_up" id="pop_up4">
+                        <img class="close" id="img_closePop_up4" src="../img/close.png"></br>
+
+                        <!--Áreas de digitação-->
+                        <label class="content1">Título:</label>
+                        </br>
+                        <input type="text" id="tittle4" class="titulo_Postit" value="">
+
+                        </br></br>
+
+                        <label class="content2">Descrição:</label>
+                        </br>
+                        <textarea class="areatexto" name="Descrição" autocapitalize="words" spellcheck="true" id="areatexto4" cols="30" rows="10" ></textarea>
+                        </br>
+                        <!--Áreas de digitação-->
+
+                        <!--Área para escolher a cor da fonte-->
+                        <label class="cores">Cor da fonte:</label>
+                        <select id="choises_fon4" class="fonte_choises">
+                            <option class="options_fonte" id="blackFon4" selected value="black">Preto</option>
+                            <option class="options_fonte" id="whiteFon4" value="white">Branco</option>
+                            <option class="options_fonte" id="orangeFon4" value="orange">Orange</option>
+                            <option class="options_fonte" id="greenFon4" value="green">Verde</option>
+                            <option class="options_fonte" id="purpleFon4" value="purple">Roxo</option>
+                            <option class="options_fonte" id="pinkFon4" value="pink">Rosa</option>
+                            <option class="options_fonte" id="yellowFon4" value="yellow">Amarelo</option>
+                            <option class="options_fonte" id="brownFon4" value="brown">Marrom</option>
+                        </select>
+                        <!--Área para escolher a cor da fonte-->
+
+                        </br>
+
+                        <!--Área para escolher a cor do fundo-->
+                        <label class="cores">Cor de fundo:</label>
+                        <select id="choises_fun4" class="fundo_choises">
+                            <option class="options_fundo" id="blackFun4" selected value="black">Preto</option>
+                            <option class="options_fundo" id="whiteFun4" value="white">Branco</option>
+                            <option class="options_fundo" id="orangeFun4" value="orange">Orange</option>
+                            <option class="options_fundo" id="greenFun4" value="green">Verde</option>
+                            <option class="options_fundo" id="purpleFun4" value="purple">Roxo</option>
+                            <option class="options_fundo" id="pinkFun4" value="pink">Rosa</option>
+                            <option class="options_fundo" id="yellowFun4" value="yellow">Amarelo</option>
+                            <option class="options_fundo" id="brownFun4" value="brown">Marrom</option>
+                        </select>
+                        <!--Área para escolher a cor do fundo-->
+                    
+                    </br>
+                        <button id="confirmar4" class="confirmar" onclick="newdiv4()">Confirmar</button>
+                    </div>
+                </div>
+                <!--Definição da área e sua estrutura que irá conter as divs que serão geradas-->
+
+                <!--Div para separar o button para uma melhor estilização-->
+                <div class="bot">
+                    <div class="btn_center">
+                        <button class="add_div" id="canvas4">Adicionar</button>
+                    </div>
+                </div>
+                <!--Div para separar o button para uma melhor estilização-->
+            </div>
+            
+
+
+        </div>
+
+        <div class="div_to_opt" id="div_to_opt1">
+
+            <div id="client_info">
+                <img class="img_close_form" id="img_close_form1" src="../img/close.png">
+                <label class="titulo_form" id="titulo_cliente">Sessão cliente</label>
+                
+                <div class="div_to_two">
+                    <div class="mid_espace">
+                        <label id="name_espace" class="labels_text">Nome:</label>
+                        <input type="text" id="name_input" class="form_elem" value="">
+                    </div>
+                    <div class="mid_espace">
+                        <label id="cpf_espace" class="labels_text">CPF/CNPJ:</label>
+                        <input type="text" id="cpf_input" class="form_elem" value="">
+                    </div>
+                </div>
+                <div class="full_espace">  
+                     <label id="email_espace" class="labels_text">Email:</label>
+                    <input type="text" id="email_input" class="form_elem" value="">
+                </div>
+                <div class="full_espace">
+                    <label id="numero_espace" class="labels_text">Telefone/Celular:</label>
+                    <input type="text" id="numero_input" class="form_elem" value="">
+                </div>
+                <div class="full_espace" id="div_to_button1">
+                    <button class="button_cliente" id="button_cliente1">Próximo</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="div_to_opt" id="div_to_opt2">
+
+            <div id="projeto_info">
+
+                <img class="img_close_form" id="img_close_form2" src="../img/close.png">
+                <label  class="titulo_form" id="titulo_projeto">Sessão projeto</label>
+                <div class="div_to_two">
+                    <div class="mid_espace">
+                        <label id="proj_name_espace" class="labels_text">Nome:</label>
+                        <input type="text" id="proj_name_input" class="form_elem" value="">
+                    </div>
+                    <div class="mid_espace">
+                        <label id="cidade_espace" class="labels_text">Cidade do projeto:</label>
+                        <input type="text" id="cidade_input" class="form_elem">
+                    </div>
+                </div>
+                <div class="full_espace" id="areatexto">
+                    <label id="descricao_espace" class="labels_text">Descrição:</label>
+                    <textarea id="descricao_textarea"></textarea>
+                </div>
+
+                <div id="quant_mem">
+                    <label class="labels_text">Equipe:</label>
+                    <select id="membros_equipe">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+                    <button id="confir_mem">OK</button>
+
+                </div>
+                
+                <div class="div_to_two">
+
+                    <div class="mid_espace" id="classificacao">
+    
+                        <label id="classifi_espace" class="subtitulo_form">Quais classificações seu projeto se encaixa?</label>
+                        <label class="options_quest" for="classifi_input1">Projeto com fins lucrativos.</label><input type="checkbox" class="form_elem_projeto-checkbox" id="classifi_input1">
+                        <label class="options_quest" for="classifi_input2">Projeto com apelo ambiental.</label><input type="checkbox" class="form_elem_projeto-checkbox" id="classifi_input2">
+                        <label class="options_quest" for="classifi_input3">Projeto com apelo social.</label><input type="checkbox" class="form_elem_projeto-checkbox" id="classifi_input3">
+                        <label class="options_quest" for="classifi_input4">Projeto com economia solidária.</label><input type="checkbox" class="form_elem_projeto-checkbox" id="classifi_input4">
+                        <label class="options_quest" for="classifi_input5">Projeto com apoio do Poder Público.</label><input type="checkbox" class="form_elem_projeto-checkbox" id="classifi_input5">
+                        <label class="options_quest" for="classifi_input6">Projeto interno com alguma Cooperativa.</label><input type="checkbox" class="form_elem_projeto-checkbox" id="classifi_input6">
+                        <label class="options_quest" for="classifi_input7">Projeto interno a alguma Associação.</label><input type="checkbox" class="form_elem_projeto-checkbox" id="classifi_input7">
+                        <label class="options_quest" for="classifi_input8">Projeto com Apelo Educacional.</label><input type="checkbox" class="form_elem_projeto-checkbox" id="classifi_input8">
+    
+                    </div>
+    
+                    <div class="mid_espace" id="formato">
+    
+                        <label id="formato_espace" class="subtitulo_form">Qual o formato do seu negócio?</label>
+                        <label class="options_quest" for="formato_espace1">Negócio Tradicional.</label><input type="radio" class="form_elem_projeto-checkbox" id="formato_espace1" name="formato">
+                        <label class="options_quest" for="formato_espace2">Negócio Inovador.</label><input type="radio" class="form_elem_projeto-checkbox" id="formato_espace2" name="formato">
+    
+                    </div>
+
+                </div>
+
+                <div class="div_to_two">
+
+                    <div class="mid_espace" id="mentorias">
+    
+                        <label id="mentorias_espace" class="subtitulo_form">Quais mentorias é necessário?</label>
+                        <label class="options_quest" for="mentorias_input1">Mentoria Ideação.</label><input type="checkbox" class="form_elem_projeto-checkbox" id="mentorias_input1">
+                        <label class="options_quest" for="mentorias_input2">Mentoria Impulso.</label><input type="checkbox" class="form_elem_projeto-checkbox" id="mentorias_input2">
+                        <label class="options_quest" for="mentorias_input3">Mentoria Especial.</label><input type="checkbox" class="form_elem_projeto-checkbox" id="mentorias_input3">
+                        <label class="options_quest" for="mentorias_input4">Mentoria Editais.</label><input type="checkbox" class="form_elem_projeto-checkbox" id="mentorias_input4">
+    
+                    </div>
+                    <div class="mid_espace" id="agenda">
+                        <label id="agenda_espace" class="subtitulo_form">Quais os períodos possui maior disponibilidade?</label> 
+                        
+                        <table id="tabela_agenda">
+                            <tr>
+                                <td>Dias</td><td>Matutino</td><td>Vespertino</td><td>Noturno</td>
+                            </tr>
+                            <tr>
+                                <td>Segunda</td><td><input id="seg-diurno" class="form_elem_projeto-checkbox" type="checkbox"></td><td><input id="seg-vespertino" class="form_elem_projeto-checkbox" type="checkbox"></td><td><input id="seg-noturno" class="form_elem_projeto-checkbox" type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td>Terça</td><td><input id="terc-diurno" class="form_elem_projeto-checkbox" type="checkbox"></td><td><input id="terc-vespertino" class="form_elem_projeto-checkbox" type="checkbox"></td><td><input id="terc-noturno" class="form_elem_projeto-checkbox" type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td>Quarta</td><td><input id="quar-diurno" class="form_elem_projeto-checkbox" type="checkbox"></td><td><input id="quar-vespertino" class="form_elem_projeto-checkbox" type="checkbox"></td><td><input id="quar-noturno" class="form_elem_projeto-checkbox" type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td>Quinta</td><td><input id="quin-diurno" class="form_elem_projeto-checkbox" type="checkbox"></td><td><input id="quin-vespertino" class="form_elem_projeto-checkbox" type="checkbox"></td><td><input id="quin-noturno" class="form_elem_projeto-checkbox" type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td>Sexta</td><td><input id="sex-diurno" class="form_elem_projeto-checkbox" type="checkbox"></td><td><input id="sex-vespertino" class="form_elem_projeto-checkbox" type="checkbox"></td><td><input id="sex-noturno" class="form_elem_projeto-checkbox" type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td>Sabado</td><td><input id="sab-diurno" class="form_elem_projeto-checkbox" type="checkbox"></td><td><input id="sab-vespertino" class="form_elem_projeto-checkbox" type="checkbox"></td><td><input id="sab-noturno" class="form_elem_projeto-checkbox" type="checkbox"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="full_espace" id="div_to_button2">
+                    <button class="button_cliente" id="button_cliente2">Enviar</button>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+</html>

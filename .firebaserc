@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "empreendamt-ba0dc"
-  }
+    "default": "empreendamt-ba0dc",
+    "empreendamt-f1f1d": "empreendamt-f1f1d"
+  },
+  "targets": {}
 }

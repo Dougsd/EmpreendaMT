@@ -1,0 +1,145 @@
+.project{
+    position:relative;
+    min-height:100px;
+    max-height:100px;
+    margin:10px;
+    padding:10px;
+    display:inline-flex;
+    width:calc(100% - 40px);
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+.equipe{
+    overflow-x: auto;
+    width: calc(100% / 3);
+    height: 100px;
+    background-color:#ddd;
+}
+.equipe h3{
+    font-family:'Lato';
+    background-color: #ddd;
+    margin-left: 5px;
+}
+.equipe p{
+    font-family:'Lato';
+    background-color:#ddd;
+    margin-left: 10px;
+}
+.equipe img{
+    float: left;
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #aaa;
+}
+.div_img{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 5px;
+    background-color: #ddd;
+}
+.info{
+    overflow-x: auto;
+    width: calc(100%/3);
+    background-color: #ddd;
+}
+.info p{
+    background-color: #ddd;
+    font-size: 20px;
+    font-family: 'Lato';
+    font-weight: 600;
+}
+.reunioes{
+    width: calc(100%/3);
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    background-color: #ddd;
+    overflow-x: auto;
+}
+.reunioes p{
+    margin: 10px;
+    font-family:'Lato';
+    background-color: #ddd;
+}
+.editar{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #ddd;
+    margin-left: 10px;
+}
+#box1{
+    background-color: #0ff271;
+    width: 50%;
+    align-self: flex-end;
+}
+#box2{
+    background-color: #0ff271;
+    width: 50%;
+}
+
+#tittle h2{
+    margin-top: 10px;
+    width:50%;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #333;
+    background-color: #0ff271;
+    font-size: 35px;
+    float: right;
+    align-self: center;
+    text-align: center;
+}
+
+#usuario p{
+    margin-bottom: 10px;
+    width:50%;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    align-self: flex-end;
+    color: #333;
+    background-color: #0ff271;
+    position: relative;
+    
+}
+#pesquisa{
+    height: 50%;
+    width: 100%;
+    float: right;
+    background-color: #0ff271;
+}
+#img_search{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+    margin: 5px;
+    top: 20%;
+    background-color: #0ff271;
+}
+#barra_pesquisa{
+    width: 80%;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Lato', serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+    position: relative;
+    top: 20%;
+    background-color: #0ff271;
+}
+.add_proj{
+    width: 50px;
+    height: 50px;
+    margin: 5px 30px 30px 25px;
+    background-color: #0ff271;
+    cursor: pointer;
+}

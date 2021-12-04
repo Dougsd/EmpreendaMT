@@ -1,0 +1,150 @@
+/*Determina o tamanho, cor de fundo, espaçamento interno e externo, uma borda sólida com arredondamento*/
+    .pop_up{
+        position: relative;
+        width: 90%;
+        height: auto;
+        background-color: #0ff271;
+        padding:2%;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top:10px;
+        margin-bottom: 10px;
+        display: none;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+/*Determina o tamanho, cor de fundo, espaçamento interno e externo, uma borda sólida com arredondamento*/
+
+/*Define o tamanho, posição, espaçamento externo e cor de fundo*/
+    .close{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        margin: 10px;
+        right: 0%;
+        background-color: #0ff271;
+        cursor: pointer;
+    }
+/*Define o tamanho, posição, espaçamento externo e cor de fundo*/
+
+/*Cria um espaçamento externo, define a fonte, coloca ela em negrito e determina o tamanho, junto com a cor de fundo e da fonte*/
+    .content1{
+        margin: 15px;
+        position: relative;
+        font-family: 'Lato', serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        background-color: #0ff271;
+        margin-top: 5%;
+    }
+/*Cria um espaçamento externo, define a fonte, coloca ela em negrito e determina o tamanho, junto com a cor de fundo e da fonte*/
+
+/*Determina uma fonte, à coloca em negrito e define o seu tamanho, define a cor de fundo e fonte, um espaçamento externo e sua posição*/
+    .content2{
+        position: relative;
+        font-family: 'Lato', serif;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 5% 5% 0% 5%;
+        background-color: #0ff271;
+        color: black;
+        top: 10%;
+}
+/*Determina uma fonte, à coloca em negrito e define o seu tamanho, define a cor de fundo e fonte, um espaçamento externo e sua posição*/
+
+/*Determina a cor de fundo e fonte, seu tamanho e posição, um espaçamento externo e uma borda inferior*/
+    .titulo_Postit{
+        border-bottom: 2px solid black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        position: relative;
+        top: 5%;
+        width: 90%;
+        font-size: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: #0ff271;
+        color: black;
+        outline: 0;
+    }
+/*Determina a cor de fundo e fonte, seu tamanho e posição, um espaçamento externo e uma borda inferior*/
+
+/*Determina a cor de fundo e fonte, seu tamanho e posição, um espaçamento externo e uma borda inferior*/
+    .texto_Postit{
+        border-bottom: 2px solid black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        position: relative;
+        top: 12%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 20px;
+        background-color: #0ff271;
+        color: black;
+    }
+/*Determina a cor de fundo e fonte, seu tamanho e posição, um espaçamento externo e uma borda inferior*/
+
+/*Define a cor de fundo e fonte, criar um espaçamento externo, determina a fonte, à coloca em negrito e seu tamanho, define o seu tamanho e posição*/
+    .fonte_choises, .fundo_choises, .cores{
+        position: relative;
+        top: 25%;
+        font-size:20px;
+        font-family: 'Lato', serif;
+        font-weight: bold;
+        background-color: #0ff271;
+        color: black;
+        margin: 10px;
+        border: none;
+        outline: 0;
+    }
+/*Define a cor de fundo e fonte, criar um espaçamento externo, determina a fonte, à coloca em negrito e seu tamanho, define o seu tamanho e posição*/
+.fonte_choises:hover, .fundo_choises:hover{
+    border: 1px solid red;
+}
+.options_fundo, .options_fonte{
+    background-color: white;
+    font-weight: bold;
+}
+
+/*Determina o seu tamanho, posição, e especifica tamanhos mínimos e máximos, define a cor de fundo e fonte e o tamanho da fonte*/
+    .areatexto{
+        position:relative;
+        width: 90%;
+        height: 75px;
+        left:5%;
+        min-width: 150px;
+        min-height: 95px;
+        max-width: 285px;;
+        max-height: 150px;
+        color:black;
+        font-size: 20px;
+        background-color: #ddd;
+    }
+/*Determina o seu tamanho, posição, e especifica tamanhos mínimos e máximos, define a cor de fundo e fonte e o tamanho da fonte*/
+
+/*Determina a cor de fundo e fonte, seu posicionamento, a fonte e seu tamanho, cria uma borda solida e arredonda a mesma, e define um espaçamento interno e externo*/
+    .confirmar{
+        background-color: #0ff271;
+        color: black;
+        font-family: 'Lato', Times, serif;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid black;
+        position: relative;
+        left: 35%;
+        margin: 10px;
+        top: 90%;
+    }
+/*Determina a cor de fundo e fonte, seu posicionamento, a fonte e seu tamanho, cria uma borda solida e arredonda a mesma, e define um espaçamento interno e externo*/
+
+/*Muda a cor da borda quando o mouse passar por cima do elemento*/
+    .confirmar:hover{
+        border: 1px solid white;
+    }
+/*Muda a cor da borda quando o mouse passar por cima do elemento*/

@@ -1,0 +1,67 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: #0ff271;
+}
+body{
+    margin: 0;
+    /* box-shadow: 0 0 1em #333; */
+}
+#profile{
+    width: 100%;
+    height: auto;
+    background-color: #0ff271;
+    display: inline-flex;
+}
+#img_perfil{
+    background-color: #0ff271;
+    width: 100px;
+    height: auto;
+    min-height: 100px;
+    
+    margin: 10px;
+}
+#img_perfil img {
+    min-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+#usuario{
+    width:100%;
+    background-color: #0ff271;
+    position: relative;
+    float: right;
+    display: inline-flex;
+}
+
+#box{
+    width:100%;
+    height:auto;
+    min-height:500px;
+    background-color: #0ff271;
+    
+}
+#menu{
+    position:relative;
+    width: 100px;
+    height:auto;
+    background-color:#0ff271;
+}
+#projetos{
+    width: calc(100% - 140px);
+    height: 600px;
+    background-color: #09a94f;
+    margin-right: 20px;
+    float: right;
+    border-radius: 10px;
+    overflow-y: scroll;
+    display: grid;
+}
+#footer{
+    width:100%;
+    height: 100px;
+    background-color: #0ff271;
+}
+
+
+
